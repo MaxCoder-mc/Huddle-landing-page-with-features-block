@@ -1,0 +1,136 @@
+@media (min-width: 34.375rem) {
+  :root {
+    --button-1-f-size: clamp(0.625rem, 0.3043rem + 3.478vw, 0.875rem);
+    --button-2-f-size: clamp(0.75rem, 0.3043rem + 3.478vw, 0.875rem);
+    --heading-1-f-size: clamp(1.5rem, 0.3043rem + 3.478vw, 2.5rem);
+    --heading-2-f-size: clamp(1.25rem, 0.3043rem + 3.478vw, 1.75rem);
+
+    --paragraph-1-f-size: clamp(1rem, 0.3043rem + 3.478vw, 1.125rem);
+    --paragraph-2-f-size: clamp(0.875rem, 0.3043rem + 3.478vw, 1.125rem);
+  }
+
+  .hero-img {
+    max-width: 26.25rem;
+  }
+}
+@media (min-width: 50rem) {
+  :root {
+    --button-3-f-size: clamp(0.625rem, 0.3043rem + 3.478vw, 1.25rem);
+    --heading-3-f-size: clamp(1.125rem, 0.3043rem + 3.478vw, 2rem);
+  }
+  .flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .left {
+    flex: 1 1 55%;
+    order: 0;
+  }
+  .right {
+    flex: 1 1 45%;
+  }
+  .even {
+    order: 1;
+  }
+  .align {
+    text-align: start;
+  }
+
+  .hero-img {
+    max-width: 100%;
+  }
+
+  /********** Header *********/
+  .header {
+    padding: 4rem 3rem;
+  }
+
+  .logo-img {
+    width: calc((200 / 16) * 1rem);
+  }
+
+  .nav {
+    gap: calc((48 / 16) * 1rem);
+  }
+  /* -------------------------- */
+  .hero-section {
+    background-image: url("./images/bg-hero-desktop.svg");
+
+    padding-top: 8rem;
+  }
+
+  .features {
+    margin-inline: 2rem;
+  }
+  .features-title {
+    text-align: start;
+  }
+
+  .cta {
+    max-width: 37.5rem;
+    max-height: 13.75rem;
+  }
+
+  .footer {
+    padding-top: 9rem;
+  }
+  .container {
+    max-width: 87.5rem;
+    padding-inline: calc((72 / 16) * 1rem);
+  }
+}
+@media (min-width: 75rem) {
+  /*********** Main **********/
+
+  /* +++++++++ Hero ++++++++ */
+
+  .hero-pg {
+    padding-right: 7rem;
+  }
+
+  /* +++++ Features +++++ */
+
+  .fearures-pg {
+    padding-right: 7rem;
+  }
+
+  /* ++++++++ CTA ++++++++ */
+  .cta {
+    max-width: 50rem;
+    max-height: 17.5rem;
+    gap: 2.5rem;
+
+    margin-bottom: -9rem;
+  }
+  /* +++++++ Footer ++++++++ */
+
+  .footer-content {
+    grid-template-columns: 1fr auto auto 1fr;
+    gap: 2rem 6rem;
+  }
+
+  .footer-content .logo {
+    grid-column: 1/-1;
+  }
+  .light-logo {
+    margin-bottom: 0;
+  }
+
+  address,
+  .col {
+    margin-bottom: 0;
+  }
+  .social-copyright {
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .social-link:link,
+  .social-link:visited {
+    width: calc((32 / 16) * 1rem);
+    height: calc((32 / 16) * 1rem);
+  }
+  .social-icon {
+    font-size: calc((16 / 16) * 1rem);
+  }
+}
